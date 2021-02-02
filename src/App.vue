@@ -16,6 +16,7 @@
 <style>
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 1rem;
   font-weight: 400;
@@ -57,6 +58,16 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-weight: 400;
+  font-weight: 300;
+}
+
+a:color {
+  color: #007be0;
+}
+a:hover {
+  color: #CC0000;
+}
+body, * {
+  box-sizing: border-box;
 }
 </style>

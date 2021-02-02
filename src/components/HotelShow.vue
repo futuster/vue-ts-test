@@ -31,7 +31,12 @@ export default class HotelShow extends Vue {
 }
 
 figure {
-  margin: 0;
+  margin: 0 0 1rem -2rem;
   padding: 0;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  max-width: 1080px;
 }
 </style>

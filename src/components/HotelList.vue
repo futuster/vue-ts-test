@@ -43,6 +43,8 @@ export default class HotelList extends Vue {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 120%;
+  margin-left: -10%;
 }
 
 .hotel-list a {
@@ -55,8 +57,8 @@ export default class HotelList extends Vue {
 }
 
 .hotel-list-item {
-  width: 20%;
-  margin: 0 1rem 1rem 0;
+  width: 25%;
+  padding: 0 1rem 1rem 0;
 }
 
 .hotel-list-item span {
