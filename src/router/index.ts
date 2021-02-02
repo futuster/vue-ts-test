@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, {RouteConfig} from 'vue-router'
 import Home from '../views/Home.vue'
+import PageNotFound from '../views/PageNotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -20,7 +21,8 @@ const routes: Array<RouteConfig> = [
         path: '/hotels/:uid/reserve/',
         name: 'HotelReserve',
         component: () => import(/* webpackChunkName: "hotelReserve" */ '../views/Reserve.vue')
-    }
+    },
+    {path: "*", component: PageNotFound}
 ]
 
 const router = new VueRouter({

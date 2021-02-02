@@ -1,14 +1,12 @@
 <template>
   <div class="hotel-detail">
-    <div class="image column">
+    <h1>{{ hotel.title }}</h1>
+    <figure>
       <img :src="hotel.image">
-    </div>
-    <div class="column">
-      <h1>{{ hotel.title }}</h1>
-      <div>{{ hotel.description }}</div>
-
-      <router-link :to="{name: 'HotelReserve', params: {uid: hotel.uid}}">Забронировать</router-link>
-    </div>
+    </figure>
+    <div>{{ hotel.description }}</div>
+    <router-link :to="{name: 'HotelReserve', params: {uid: hotel.uid}}">Забронировать</router-link>
+  </div>
   </div>
 </template>
 
@@ -50,6 +48,7 @@ export default class HotelShow extends Vue {
   flex-wrap: wrap;
   width: 100%;
 }
+
 .column {
   display: flex;
   flex-direction: column;
@@ -60,6 +59,7 @@ export default class HotelShow extends Vue {
 .image {
   flex-basis: 20%;
 }
+
 .image img {
   width: 100%;
   height: auto;
