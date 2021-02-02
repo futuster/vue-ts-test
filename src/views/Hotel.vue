@@ -1,17 +1,17 @@
 <template>
   <div>
-    <HotelList />
+    <HotelShow />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HotelList from '@/components/HotelList.vue';
+import HotelShow from "@/components/HotelShow.vue";
 
 @Component({
   components: {
-    HotelList,
+    HotelShow
   },
 })
-export default class Home extends Vue {}
+export default class Hotel extends Vue {}
 </script>
