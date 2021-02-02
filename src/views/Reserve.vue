@@ -12,7 +12,7 @@
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator';
 import HotelReserve from '@/components/HotelReserve.vue'
-import store from '../store'
+import store from "@/store";
 import {IHotel, IHotelReserveRequestParams} from "@/services/hotel/models";
 
 @Component({

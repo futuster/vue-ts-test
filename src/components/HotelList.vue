@@ -19,32 +19,12 @@
 import {Component, Prop, Vue} from 'vue-property-decorator';
 
 
-import {IHotel} from "@/services/hotel/models";
-import IPagination from "@/services/common/IPagination";
-import store from "../store"
+import {IHotel, IHotelList} from "@/services/hotel/models";
+
 
 @Component
 export default class HotelList extends Vue {
-  isLoading = false;
-
-  get hotels(): Array<IHotel> {
-    return store.state.hotels;
-  }
-
-  async mounted(): Promise<void> {
-    await this.fetchList();
-  }
-
-  async fetchList(): Promise<void> {
-    this.isLoading = true;
-    try {
-      store.dispatch("fetchHotelList");
-    } finally {
-      this.isLoading = false;
-      // TODO нужно сохранять позицию скрола, чтобы при возвращении назад продолжить с того места на котором остановились
-      window.scrollTo(0, 0);
-    }
-  }
+  @Prop() private hotels!: IHotelList;
 }
 </script>
 
@@ -57,7 +37,7 @@ export default class HotelList extends Vue {
 
 .hotel-list-item {
   width: 20%;
-  margin-right: 1rem;
+  margin: 0 1rem 1rem 0;
 }
 
 .hotel-list img {

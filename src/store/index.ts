@@ -28,6 +28,7 @@ class State {
 const getters = <GetterTree<State, any>>{};
 
 const mutations = <MutationTree<State>>{
+
     setHotels(state, payload) {
         state.hotels = payload;
     },
@@ -35,6 +36,7 @@ const mutations = <MutationTree<State>>{
     setHotel(state, payload) {
         state.hotel = payload;
     }
+
 };
 
 const actions = <ActionTree<State, any>>{
@@ -60,6 +62,7 @@ const actions = <ActionTree<State, any>>{
     async hotelReserve(context, payload: IHotelReserveRequestParams) {
         const res: IHotel = await ReserveHotel(payload);
     }
+
 };
 
 export default new Vuex.Store({

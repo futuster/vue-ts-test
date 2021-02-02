@@ -50,10 +50,12 @@ label {
   display: block;
   padding: 0 0 .5rem;
 }
+
 label span {
   display: block;
   font-weight: bold;
 }
+
 input {
   border-radius: 3px;
   padding: .4rem .5rem;
@@ -64,25 +66,30 @@ input {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 14px;
 }
+
 input:focus {
   box-shadow: 0 0 3px #48ceff;
   border-color: #48ceff;
 }
 
 button {
-
   margin: 1rem 0;
+  color: #EEE;
+  background: #007be0;
   font-size: 16px;
   padding: .4rem .5rem;
   border-radius: 3px;
   outline: none;
   border: 1px solid #666;
   transition: all .2s ease-in-out;
+  cursor: pointer;
 }
+
 button:hover, button:focus {
   box-shadow: 0 0 3px #48ceff;
   border-color: #48ceff;
 }
+
 button:active {
   padding: .45rem .5rem .35rem;
   box-shadow: 0 0 5px #48ceff;
