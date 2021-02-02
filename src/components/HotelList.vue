@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import {Component, Prop, Vue} from 'vue-property-decorator';
-import {IHotelList} from "@/services/hotel/models";
+import {IHotel} from "@/services/hotel/models";
 import Money from "@/components/Money.vue";
 import Location from "@/components/Location.vue";
 
