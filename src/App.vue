@@ -55,4 +55,8 @@ body {
   color: #FFF;
   box-shadow: 0 0 3px #48ceff;
 }
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
 </style>
