@@ -4,8 +4,8 @@
 
       <div id="nav">
         <router-link to="/">Главная</router-link>
-        |
-        <router-link :to="`/${Math.random().toString(36).substring(2)}`">404</router-link>
+        <!--|
+        <router-link :to="`/${Math.random().toString(36).substring(2)}`">404</router-link-->
       </div>
 
       <router-view/>
