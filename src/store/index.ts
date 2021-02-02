@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex, {ActionTree, GetterTree, MutationTree} from 'vuex'
 import {IHotel, IHotelList, IHotelReserveRequestParams} from '@/services/hotel/models';
 import IPagination from "@/services/common/IPagination"
+import IBreadcrumb from "@/services/common/IBreadcrumb"
 import {GetHotel, GetHotelList, ReserveHotel} from "@/services/hotel/HotelApi";
 
 Vue.use(Vuex)
@@ -11,8 +12,11 @@ class State {
 
     hotel: IHotel;
 
+    breadcrumbs: Array<IBreadcrumb>
+
     constructor() {
         this.hotels = [];
+        this.breadcrumbs = [];
         this.hotel = {
             uid: '',
             title: '',
