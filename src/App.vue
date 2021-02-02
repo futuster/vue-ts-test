@@ -5,7 +5,7 @@
       <div id="nav">
         <router-link to="/">Главная</router-link>
         |
-        <router-link :to="Math.random().toString(36).substring(2)">404</router-link>
+        <router-link :to="`/${Math.random().toString(36).substring(2)}`">404</router-link>
       </div>
 
       <router-view/>
@@ -34,5 +34,25 @@ body {
 .container {
   margin: 0 auto;
   width: 80%;
+}
+
+.btn {
+  text-decoration: none;
+  color: #EEE;
+  background: #007be0;
+  display: inline-block;
+  font-size: 16px;
+  padding: .4rem .5rem;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #666;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3aa2ff;
+  color: #FFF;
+  box-shadow: 0 0 3px #48ceff;
 }
 </style>

@@ -9,8 +9,6 @@ import {Component, Vue} from 'vue-property-decorator';
 import HotelList from '@/components/HotelList.vue';
 import {IHotel} from "@/services/hotel/models";
 import store from "@/store";
-import IPagination from "@/services/common/IPagination";
-
 
 @Component({
   components: {

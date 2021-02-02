@@ -1,10 +1,8 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
-import {GetterTree, MutationTree, ActionTree} from "vuex"
+import Vuex, {ActionTree, GetterTree, MutationTree} from 'vuex'
 import {IHotel, IHotelList, IHotelReserveRequestParams} from '@/services/hotel/models';
 import IPagination from "@/services/common/IPagination"
-
-import {GetHotelList, GetHotel, ReserveHotel} from "@/services/hotel/HotelApi";
+import {GetHotel, GetHotelList, ReserveHotel} from "@/services/hotel/HotelApi";
 
 Vue.use(Vuex)
 

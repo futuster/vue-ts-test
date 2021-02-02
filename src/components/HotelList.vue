@@ -17,9 +17,7 @@
 
 <script lang="ts">
 import {Component, Prop, Vue} from 'vue-property-decorator';
-
-
-import {IHotel, IHotelList} from "@/services/hotel/models";
+import {IHotelList} from "@/services/hotel/models";
 
 
 @Component

@@ -18,7 +18,7 @@
         <input type="text" v-model="reservation.address">
       </label>
 
-      <button>Забронировать</button>
+      <button type="submit" class="btn">Забронировать</button>
     </form>
   </div>
 </template>
@@ -73,25 +73,7 @@ input:focus {
 }
 
 button {
-  margin: 1rem 0;
-  color: #EEE;
-  background: #007be0;
-  font-size: 16px;
-  padding: .4rem .5rem;
-  border-radius: 3px;
-  outline: none;
-  border: 1px solid #666;
-  transition: all .2s ease-in-out;
-  cursor: pointer;
+  margin-top: 1rem;
 }
 
-button:hover, button:focus {
-  box-shadow: 0 0 3px #48ceff;
-  border-color: #48ceff;
-}
-
-button:active {
-  padding: .45rem .5rem .35rem;
-  box-shadow: 0 0 5px #48ceff;
-}
 </style>

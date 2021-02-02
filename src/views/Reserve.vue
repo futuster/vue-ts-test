@@ -1,10 +1,10 @@
 <template>
   <div>
     <div v-if="!reservationComplete">
-    <HotelReserve @onReservationSubmit="onReserve" :hotel="hotel"/>
+      <HotelReserve @onReservationSubmit="onReserve" :hotel="hotel"/>
     </div>
     <div v-else>
-      <h4>{{hotel.title}} успешно забронирован!</h4>
+      <h4>{{ hotel.title }} успешно забронирован!</h4>
     </div>
   </div>
 </template>

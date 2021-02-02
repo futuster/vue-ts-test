@@ -1,10 +1,5 @@
 import IPagination from "@/services/common/IPagination";
-
-import {
-    IHotel,
-    IHotelList, IHotelReserveRequestParams
-} from "./models";
-
+import {IHotel, IHotelList, IHotelReserveRequestParams} from "./models";
 import ApiInstance from './BaseApi'
 
 const HOTEL_LIST_PATH = '/hotels.json';

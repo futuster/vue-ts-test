@@ -1,4 +1,4 @@
-import axios, {AxiosInstance, AxiosRequestConfig, AxiosResponse} from "axios";
+import axios, {AxiosInstance, AxiosResponse} from "axios";
 
 const OnResponseSuccess = (response: AxiosResponse<any>): AxiosResponse<any> =>
     response;
