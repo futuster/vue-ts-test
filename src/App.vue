@@ -64,10 +64,23 @@ h1, h2, h3, h4 {
 a:color {
   color: #007be0;
 }
+
 a:hover {
   color: #CC0000;
 }
+
 body, * {
   box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem 2rem 1rem;
+  }
 }
 </style>

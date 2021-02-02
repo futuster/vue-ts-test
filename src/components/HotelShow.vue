@@ -5,6 +5,7 @@
     <figure>
       <img :src="hotel.image">
     </figure>
+    <div></div>
     <div>{{ hotel.description }}</div>
     <router-link class="btn" v-if="hotel.uid" :to="{name: 'HotelReserve', params: {uid: hotel.uid}}">Забронировать</router-link>
 
@@ -31,12 +32,14 @@ export default class HotelShow extends Vue {
 }
 
 figure {
-  margin: 0 0 1rem -2rem;
+  margin: 0 0 1rem;
   padding: 0;
 }
+
 figure img {
   width: 100%;
   height: auto;
   max-width: 1080px;
 }
+
 </style>

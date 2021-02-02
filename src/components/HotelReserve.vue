@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ hotel.title }}</h1>
+    <h1><router-link :to="{name:'HotelShow', params: {uid: hotel.uid}}">{{ hotel.title }}</router-link></h1>
     <form @submit.prevent="onSubmit">
       <label> <span>ФИО</span>
         <input type="text" required v-model="reservation.fullname">
@@ -46,6 +46,17 @@ export default class HotelReserve extends Vue {
 </script>
 
 <style scoped>
+h1 a {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  transition: all .3s ease-in-out;
+}
+h1 a:hover {
+  color: #000;
+  border-color: #000;
+}
 label {
   display: block;
   padding: 0 0 .5rem;
